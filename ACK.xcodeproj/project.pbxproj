@@ -12,6 +12,7 @@
 		B6B5BBA91D724EEE0097CA13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B5BBA71D724EEE0097CA13 /* Main.storyboard */; };
 		B6B5BBAB1D724EEE0097CA13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6B5BBAA1D724EEE0097CA13 /* Assets.xcassets */; };
 		B6B5BBAE1D724EEE0097CA13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6B5BBAC1D724EEE0097CA13 /* LaunchScreen.storyboard */; };
+		B6FE10531E289EB2001E98F0 /* AddScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FE10521E289EB2001E98F0 /* AddScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B6B5BBAA1D724EEE0097CA13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6B5BBAD1D724EEE0097CA13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6B5BBAF1D724EEE0097CA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6FE10521E289EB2001E98F0 /* AddScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				B6B5BBA31D724EEE0097CA13 /* AppDelegate.swift */,
 				B6B5BBA51D724EEE0097CA13 /* ViewController.swift */,
 				B6B5BBA71D724EEE0097CA13 /* Main.storyboard */,
+				B6FE10521E289EB2001E98F0 /* AddScreenViewController.swift */,
 				B6B5BBAA1D724EEE0097CA13 /* Assets.xcassets */,
 				B6B5BBAC1D724EEE0097CA13 /* LaunchScreen.storyboard */,
 				B6B5BBAF1D724EEE0097CA13 /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				B6B5BBA61D724EEE0097CA13 /* ViewController.swift in Sources */,
 				B6B5BBA41D724EEE0097CA13 /* AppDelegate.swift in Sources */,
+				B6FE10531E289EB2001E98F0 /* AddScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
