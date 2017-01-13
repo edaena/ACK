@@ -6,4 +6,8 @@
 //  Copyright © 2017 Edaena Salinas Jasso. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class SettingsScreenViewController: UIViewController {
+
+}
