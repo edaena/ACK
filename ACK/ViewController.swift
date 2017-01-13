@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         let key = String(describing: month) + "-" + String(describing: day) + "-" + String(describing: year);
         
         // Initialize array if nothing has been save
+        // to-do
         if (ackArray == nil) {
             ackArray = []
         }
