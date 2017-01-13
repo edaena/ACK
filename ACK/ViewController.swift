@@ -19,26 +19,26 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var ackButton: UIButton!
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
-    @IBAction func checkAck(sender: UITextField) {
+    @IBAction func checkAck(_ sender: UITextField) {
        if (!ack1.text!.isEmpty && !ack2.text!.isEmpty && !ack3.text!.isEmpty ) {
-            ackButton.enabled = true;
+            ackButton.isEnabled = true;
         }
         else {
-            ackButton.enabled = false;
+            ackButton.isEnabled = false;
         }
     }
 
-    @IBAction func saveAck(sender: UIButton) {
+    @IBAction func saveAck(_ sender: UIButton) {
     
-        var ackArray = defaults.arrayForKey("AckAppData") as? [[String:[String]]]
-        let date = NSDate()
-        let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
-        let components = calendar.components([.Month, .Day, .Year], fromDate: date)
+        var ackArray = defaults.array(forKey: "AckAppData") as? [[String:[String]]]
+        let date = Date()
+        let calendar = Calendar(identifier: Calendar.Identifier.gregorian)
+        let components = (calendar as NSCalendar).components([.month, .day, .year], from: date)
         
         let (month, day, year) = (components.month, components.day, components.year)
-        let key = String(month) + "-" + String(day) + "-" + String(year);
+        let key = String(describing: month) + "-" + String(describing: day) + "-" + String(describing: year);
         
         // Initialize array if nothing has been save
         if (ackArray == nil) {
@@ -60,3 +60,4 @@ class ViewController: UIViewController {
     }
 }
 
+ 
